@@ -388,7 +388,7 @@ Return the first matching node, or nil if none is found."
 
 ;;;###autoload
 (and (fboundp 'treesit-ready-p)
-     (treesit-ready-p 'bicep)
+     (treesit-ready-p 'bicep t)
      (progn
        (add-to-list 'auto-mode-alist '("\\.bicep\\(param\\)?\\'"
                                        . bicep-ts-mode))))
